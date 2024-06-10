@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.2/tsparticles.confetti.bundle.min.js"></script>
+    <title>Simple Age Calculator</title>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <h1 id="title-heading">Age Calculator</h1>
+        <form class="current_date_form">
+          <h3 class="center">Calculate to Current Date</h3>
+          <label for="date">Select Your Date of Birth:</label>
+          <input type="date" class="date-input" id="date" name="date" />
+          <br />
+          <label class="results-hidden" id="results"></label>
+          <br />
+          <button type="submit" class="btn">Calculate</button>
+        </form>
+        <form class="given_date_form">
+          <h3 class="center">Calculate to Given Date</h3>
+          <div class="input-wrapper">
+            <label for="birth-date">Your Birth Date (from):</label>
+            <input
+              type="date"
+              class="date-input"
+              id="birth-date"
+              name="birth-date" />
+          </div>
+
+          <div class="input-wrapper" style="margin-top: 5px">
+            <label for="selected-date">To Date:</label>
+            <input
+              type="date"
+              class="date-input"
+              id="selected-date"
+              name="selected-date" />
+          </div>
+
+          <label class="results-hidden" id="results-2"></label>
+          <br />
+          <button type="submit" class="btn1">Calculate</button>
+        </form>
+      </div>
+    </main>
+    <script src="script.js" defer></script>
+  </body>
+</html>
