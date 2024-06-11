@@ -26,9 +26,9 @@ bmiForm.addEventListener("submit", (e) => {
     height = heightInput.value;
     weight = weightInput.value;
     let BMI = (weight / ((height * height) / 10000)).toFixed(2);
-    resultsElement.innerText = `Your BMI is ${BMI} indicating that you are ${checkBMIStatus(
+    resultsElement.innerText = `Your BMI is ${BMI} indicating that you are in the ${checkBMIStatus(
       BMI
-    )}`;
+    )} category`;
     resultsElement.classList.remove("results-hidden");
     resultsElement.classList.add("results-shown");
   }
