@@ -32,8 +32,9 @@ form {
   font-size: 18px;
   text-wrap: wrap;
 }
-.current_date_form input, .given_date_form input {
-  width: 50%;
+.current_date_form input,
+.given_date_form input {
+  width: 75%;
 }
 button,
 .links {
