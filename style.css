@@ -41,13 +41,18 @@ button,
   border-radius: 5px;
   margin-bottom: 10px;
   cursor: pointer;
-  font-size: inherit;
+  font-size: 20px;
 }
 .date-input {
   padding: 3px 10px;
   font-size: inherit;
-  background-color: azure;
   border-radius: 5px;
+}
+.bmi-input {
+  padding: 3px 10px;
+  font-size: inherit;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
 #date:invalid {
   background-color: hotpink;
@@ -71,6 +76,7 @@ button,
   margin-bottom: 5px;
   flex-wrap: wrap;
 }
+
 .input-wrapper label {
   gap: 10px;
   max-width: 50%;
