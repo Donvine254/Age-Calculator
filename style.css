@@ -68,7 +68,9 @@ button,
   border-bottom: 5px;
   display: block !important;
 }
-
+input:focus {
+  background-color: rgb(200, 252, 234);
+}
 .input-wrapper {
   display: flex;
   align-items: center;

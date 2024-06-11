@@ -17,7 +17,7 @@
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.2/tsparticles.confetti.bundle.min.js"></script>
-    <title>Simple Age Calculator</title>
+    <title>Simple BMI Calculator</title>
   </head>
   <body>
     <main>
@@ -31,21 +31,27 @@
             problems. This calculator provides BMI and the corresponding weight
             category.
           </p>
+          <label for="weight">Weight in Kilograms:</label>
+          <br />
           <input
             type="number"
             class="bmi-input"
             id="weight"
             name="weight"
-            placeholder="Enter your weight in Kgs" />
+            min="1"
+            placeholder="Enter your weight" />
+          <br />
+          <label for="height">Height in Centimeters:</label>
           <br />
           <input
             type="number"
             class="bmi-input"
             id="height"
             name="height"
-            placeholder="Enter your height in Cm" />
-          <br />
-          <label class="results-hidden" id="results"></label>
+            min="10"
+            placeholder="Enter your height" />
+
+          <p class="results-hidden" id="results"></p>
           <br />
           <button type="submit" class="btn">Calculate</button>
         </form>
@@ -77,7 +83,9 @@
         </div>
       </div>
     </main>
-
-    <script src="script.js" defer></script>
+    <footer style="text-align: center">
+      &copy; 2024 Donvine. All Rights Reserved
+    </footer>
+    <script src="bmi.js" defer></script>
   </body>
 </html>
