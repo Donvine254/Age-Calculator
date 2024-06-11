@@ -4,9 +4,8 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  max-width: 500px;
+  margin: auto;
 }
 .center {
   text-align: center;
@@ -86,4 +85,34 @@ a {
   gap: 10px;
   align-items: center;
   justify-content: space-between;
+}
+.flex-container {
+  display: flex;
+  align-items: start;
+  justify-items: flex-start;
+  justify-content: space-between;
+}
+.flex-container div {
+  flex: 1;
+  padding: 0px 5px;
+}
+
+.flex-container > div:nth-child(1) {
+  background-color: red; /* Underweight */
+  color: white;
+}
+
+.flex-container > div:nth-child(2) {
+  background-color: rgb(8, 243, 8); /* Normal */
+  color: white;
+}
+
+.flex-container > div:nth-child(3) {
+  background-color: #ffbf00; /* Overweight */
+  color: black;
+}
+
+.flex-container > div:nth-child(4) {
+  background-color: red; /* Obese */
+  color: white;
 }
